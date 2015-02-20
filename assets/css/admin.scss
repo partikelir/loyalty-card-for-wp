@@ -1,0 +1,523 @@
+/**
+ * admin.scss
+ * General Loyalty Card for WordPress admin styles. Settings, product data tabs, reports, etc.
+ */
+
+/**
+ * Imports
+ */
+@import "bourbon";
+@import "mixins";
+@import "select2";
+
+/**
+ * Styling begins
+ */
+.clear {
+	clear: both;
+}
+
+#lcwp-loyalty-card-data {
+	input: invalid {
+		border: 1px solid #cc010b;
+		background: #ffebe8;
+	}
+
+	.panel-wrap {
+		background: #fff;
+		overflow: hidden;
+	}
+
+	.inside {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+table.wp-list-table {
+	.column-name {
+		width: 22%;
+	}
+
+	.column-barcode {
+		text-align: center;
+
+		.barcode_container {
+			margin: 0 auto;
+		}
+
+		.barcode_number {
+			color: #000;
+			font-family: "Lucida Console", Monaco, monospace;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+img.help_tip {
+	vertical-align: middle;
+	margin: 0 0 0 9px;
+}
+
+.postbox img.help_tip {
+	margin-top: -4px;
+}
+
+.loyalty_card_data {
+	padding: 9px 9px 9px 9px;
+	color:  #555;
+}
+
+.loyalty_card_data {
+	padding: 0;
+}
+
+.loyalty_card_data p,
+.loyalty_card_data fieldset.form-field {
+	margin: 0 0 9px;
+	font-size: 12px;
+	padding: 5px 9px;
+	line-height: 24px;
+
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+.options_group {
+	@include box-sizing(border-box);
+
+	p {
+		margin: 9px 0 9px;
+	}
+
+	p.form-field, div.form-field {
+		padding: 5px 20px 5px 162px !important; /** Padding for aligning labels left - 12px + 150 label width **/
+	}
+
+	label {
+		float: left;
+		font-weight: bold;
+		width: 150px;
+		padding: 0;
+		margin: 0 0 0 -150px;
+
+		.req {
+			font-weight: 700;
+			font-style: normal;
+			color: red;
+		}
+	}
+
+	.description {
+		padding: 0;
+		margin: 0 0 0 7px;
+		clear: none;
+		display: inline;
+	}
+
+	.description-block {
+		margin-left: 0;
+		display: block;
+	}
+
+	textarea,
+	input,
+	select {
+		margin: 0;
+	}
+
+	textarea {
+		vertical-align: top;
+		height: 3.5em;
+		line-height: 1.5em;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="number"] {
+		width: 50%;
+		float: left;
+	}
+
+	input.button {
+		width: auto;
+		margin-left: 8px;
+	}
+
+	select {
+		float: left;
+	}
+
+	input[type="text"].short,
+	input[type="email"].short,
+	input[type="number"].short,
+	.short {
+		width: 50%;
+	}
+
+	.sized {
+		width: auto !important;
+		margin-right: 6px;
+	}
+
+	.options_group {
+		border-top: 1px solid white;
+		border-bottom: 1px solid #eee;
+	}
+
+	.options_group:first-child {
+		border-top: 0;
+	}
+
+	.options_group:last-child {
+		border-bottom: 0;
+	}
+
+	.options_group {
+		margin: 9px 0;
+		font-size: 12px;
+		padding: 5px 9px;
+		line-height: 24px;
+
+		label {
+			width: auto;
+			float: none;
+		}
+
+		ul {
+			float: left;
+			width: 50%;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0;
+				width: auto;
+
+				input {
+					width: auto;
+					float: none;
+					margin-right: 4px;
+				}
+			}
+		}
+	}
+
+	&.padded {
+		padding: 1em;
+	}
+
+	.select2-container {
+		float: left;
+	}
+
+	.barcode_container {
+		float: left;
+	}
+
+	.barcode_number {
+		clear: left;
+		color: #000;
+		font-family: "Lucida Console", Monaco, monospace;
+		margin-top: 0;
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.barcode_container, .barcode_number {
+		max-width: 348px;
+	}
+}
+
+#lcwp-loyalty-card-data input.dp-applied {
+	float: left;
+}
+
+#lcwp-loyalty-card-data {
+	select {
+		font-weight: 400;
+	}
+
+	&:last-of-type {
+		border-bottom: 0;
+	}
+
+	.handlediv {
+		&:before {
+			line-height: .5 !important;
+		}
+	}
+
+	&.closed {
+		@include border-radius(3px);
+
+		.handlediv {
+			&:before {
+				content: "\f140" !important;
+			}
+		}
+
+		h3 {
+			border: 0;
+		}
+	}
+
+	h3 {
+		margin: 0 !important;
+		padding: .75em .75em .75em 1em !important;
+		font-size: 1em !important;
+		overflow: hidden;
+		zoom: 1;
+		cursor: move;
+
+		button {
+			float: right;
+		}
+
+		strong {
+			font-weight: normal;
+			line-height: 24px;
+			font-weight: 700;
+		}
+
+		select {
+			font-family: sans-serif;
+		}
+
+		.handlediv {
+			background-position: 6px 5px !important;
+			display: none;
+			height: 24px;
+		}
+
+		&.fixed {
+			cursor: pointer !important;
+		}
+	}
+
+	h3:hover .handlediv {
+		display: block;
+	}
+
+	table {
+		width: 100%;
+		position: relative;
+		background-color: #fdfdfd;
+		padding: 1em;
+		border-top: 1px solid #eee;
+
+		td {
+			text-align: left;
+			padding: 0 6px 1em 0;
+			vertical-align: top;
+			border: 0;
+
+			label {
+				text-align: left;
+				display: block;
+				line-height: 21px;
+			}
+
+			input {
+				float: left;
+				min-width: 200px;
+			}
+
+			input,
+			textarea {
+				width: 100%;
+				margin: 0;
+				display: block;
+				font-size: 14px;
+				padding: 4px;
+				color: #555;
+			}
+
+			select,
+			.select2-container  {
+				width: 100% !important;
+			}
+
+			input.short {
+				width: 200px;
+			}
+
+			input.checkbox {
+				width: 16px;
+				min-width: inherit;
+				vertical-align: text-bottom;
+				display: inline-block;
+				float: none;
+			}
+		}
+
+		td.attribute_name {
+			width: 200px;
+		}
+
+		.plus,
+		.minus {
+			margin-top: 6px;
+		}
+
+		.fl {
+			float: left;
+		}
+
+		.fr {
+			float: right;
+		}
+	}
+}
+
+.form-row {
+	label {
+		display: block;
+	}
+
+	input[type=text],
+	input[type=number],
+	select {
+		width: 100%;
+	}
+
+	&.dimensions_field {
+		input {
+			width: 25%;
+			float: left;
+			margin-right: 1%;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.form-row-first,
+.form-row-last {
+	width: 48%;
+	float: right;
+}
+
+.form-row-first {
+	clear: both;
+	float: left;
+}
+
+.form-row-full {
+	clear: both;
+}
+
+/**
+ * Tooltips
+ */
+.tips {
+	cursor: help;
+	text-decoration: none;
+}
+
+img.tips {
+	padding: 5px 0 0 0;
+}
+
+#tiptip_holder {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+
+#tiptip_holder {
+	&.tip_top {
+		padding-bottom: 5px;
+
+		#tiptip_arrow_inner {
+			margin-top: -7px;
+			margin-left: -6px;
+			border-top-color: #464646;
+		}
+	}
+
+	&.tip_bottom {
+		padding-top: 5px;
+
+		#tiptip_arrow_inner {
+			margin-top: -5px;
+			margin-left: -6px;
+			border-bottom-color: #464646;
+		}
+	}
+
+	&.tip_right {
+		padding-left: 5px;
+
+		#tiptip_arrow_inner {
+			margin-top: -6px;
+			margin-left: -5px;
+			border-right-color: #464646;
+		}
+	}
+
+	&.tip_left {
+		padding-right: 5px;
+
+		#tiptip_arrow_inner {
+			margin-top: -6px;
+			margin-left: -7px;
+			border-left-color: #464646;
+		}
+	}
+}
+
+#tiptip_content {
+	font-size: 11px;
+	color: #fff;
+	padding: .5em .5em;
+	background: #464646;
+	@include border-radius(3px);
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+	-moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+	text-align: center;
+	max-width: 150px;
+
+	code {
+		background: #888;
+		padding: 1px;
+	}
+}
+
+#tiptip_arrow,
+#tiptip_arrow_inner {
+	position: absolute;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 6px;
+	height: 0;
+	width: 0;
+}
+
+/**
+ * Select2
+ */
+.select2-drop {
+	z-index: 999999;
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	padding: 3px 5px;
+}
+.select2-container {
+	line-height: 1.85em;
+	font-size: 14px;
+}

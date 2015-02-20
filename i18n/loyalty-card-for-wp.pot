@@ -1,0 +1,224 @@
+# Copyright (C) 2015 Nicola Mustone
+# This file is distributed under the GPL v3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Loyalty Card for WordPress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/\n"
+"POT-Creation-Date: 2015-02-16 07:28:41+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+
+#: includes/admin/class-lcwp-admin-meta-boxes.php:78
+msgid "Loyalty Card Data"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:62
+msgid "Name"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:63
+#: includes/admin/meta-boxes/class-lcwp-meta-box-loyalty-card-data.php:35
+msgid "Card number"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:64
+msgid "Date"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:104
+msgid "Edit this item"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:104
+msgid "Edit"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:108
+msgid "Restore this item from the Trash"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:108
+msgid "Restore"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:110
+msgid "Move this item to the Trash"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:110
+msgid "Trash"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:114
+msgid "Delete this item permanently"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:114
+msgid "Delete Permanently"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:120
+msgid "Preview &#8220;%s&#8221;"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:120
+msgid "Preview"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:122
+msgid "View &#8220;%s&#8221;"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:122
+msgid "View"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:280
+msgid "Loyalty Card updated. <a href=\"%s\">View Loyalty Card</a>"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:281
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:282
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:283
+msgid "Loyalty Card updated."
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:284
+msgid "Loyalty Card restored to revision from %s"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:285
+msgid "Loyalty Card published. <a href=\"%s\">View Loyalty Card</a>"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:286
+msgid "Loyalty Card saved."
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:287
+msgid ""
+"Loyalty Card submitted. <a target=\"_blank\" href=\"%s\">Preview Loyalty "
+"Card</a>"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:288
+msgid ""
+"Loyalty Card scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview Loyalty Card</a>"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:289
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:290
+msgid ""
+"Loyalty Card draft updated. <a target=\"_blank\" href=\"%s\">Preview "
+"Loyalty Card</a>"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:306
+msgid "Loyalty Card name"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:325
+msgid "Insert into %s"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin-post-type.php:326
+msgid "Uploaded to this %s"
+msgstr ""
+
+#: includes/admin/class-lcwp-admin.php:51
+msgid ""
+"If you like <strong>Loyalty Card for WordPress</strong> please leave us a "
+"<a href=\"%1$s\" target=\"_blank\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> "
+"rating on <a href=\"%1$s\" target=\"_blank\">WordPress.org</a>. A huge "
+"thank you from Nicola in advance!"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-lcwp-meta-box-loyalty-card-data.php:37
+msgid "The Card number is a unique identifier for each distinct loyalty card."
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:24 includes/class-lcwp-post-type.php:35
+msgid "Loyalty Cards"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:25
+msgid "Loyalty Card"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:27
+msgid "Add New Card"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:28
+msgid "Edit Card"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:29
+msgid "New Loyalty Card"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:30
+msgid "View Loyalty Card"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:31
+msgid "Search Loyalty Cards"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:32
+msgid "No Loyalty Cards found"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:33
+msgid "No Loyalty Cards found in Trash"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:34
+msgid "Parent Loyalty Card:"
+msgstr ""
+
+#: loyalty-card-for-wp.php:72 loyalty-card-for-wp.php:79
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Loyalty Card for WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://nicolamustone.it/loyalty-card-for-wp/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Loyalty Card for WordPress add loyalty cards to your site and you can "
+"create beautiful cards for your customers."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Nicola Mustone"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://nicolamustone.it/"
+msgstr ""
+
+#: includes/class-lcwp-post-type.php:26
+msgctxt "lcwp"
+msgid "Add New Card"
+msgstr ""
